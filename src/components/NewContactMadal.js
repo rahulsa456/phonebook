@@ -50,7 +50,8 @@ export default function NewContactModal() {
             <TextField id="filled-basic" label="Mobile Number" variant="filled" value={data.mobile} onChange={e => dispatch(changeMobile(e.target.value))}/><br/><br/>
             <TextField id="filled-basic" label="Email ID" variant="filled" value={data.email} onChange={e => dispatch(changeEmail(e.target.value))}/><br/><br/>
             <Button variant="contained" onClick={()=> {dispatch(new_contact(data)) 
-                handleClose()}}>Save Contact</Button>
+                handleClose()
+                }}>Save Contact</Button>
         </Box>
       </Modal>
     </div>

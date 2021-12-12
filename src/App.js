@@ -15,6 +15,7 @@ import { createStore } from 'redux';
 import NewContactModal from './components/NewContactMadal';
 
 
+
 const store = createStore(allReducers)
 
 export default function App() {
@@ -40,6 +41,7 @@ export default function App() {
         
       </Box>
       <NewContactModal/>
+      
       
     </Provider>
     

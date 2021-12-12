@@ -32,3 +32,10 @@ export function changeEmail (email){
     }
 }
 
+export function addRecent (id){
+    return {
+        type: 'ADD_RECENT',
+        payload: id
+    }
+}
+

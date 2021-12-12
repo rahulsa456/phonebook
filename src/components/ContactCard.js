@@ -3,7 +3,9 @@ import React from 'react';
 import Avatar from '@mui/material/Avatar';
 import Rating from '@mui/material/Rating';
 import { useDispatch } from 'react-redux';
-import { toggle_fav } from '../actions';
+import { addRecent, toggle_fav } from '../actions';
+import CallIcon from '@mui/icons-material/Call';
+import { IconButton } from '@mui/material';
 
 const styles = {
     container : {
@@ -75,6 +77,17 @@ function ContactCard(props) {
                         //setValue(newValue);
                     }}
                 />
+            </div>
+            <div >
+                <IconButton 
+                    color="primary"
+                    onClick= {() =>{
+                        // call functionality
+                        dispatch(addRecent(props.id))
+                    }}
+                >
+                    <CallIcon/>
+                </IconButton>        
             </div>
             
         </div>
