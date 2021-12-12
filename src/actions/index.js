@@ -12,3 +12,23 @@ export function toggle_fav (id){
     }
 }
 
+export function changeName (name){
+    return {
+        type: 'CHANGE_NAME',
+        payload: name
+    }
+}
+export function changeMobile (mobile){
+    return {
+        type: 'CHANGE_MOBILE',
+        payload: mobile
+    }
+}
+
+export function changeEmail (email){
+    return {
+        type: 'CHANGE_EMAIL',
+        payload: email
+    }
+}
+

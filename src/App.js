@@ -12,6 +12,8 @@ import Favourite from './components/Favourite';
 import allReducers from './reducers';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
+import NewContactModal from './components/NewContactMadal';
+
 
 const store = createStore(allReducers)
 
@@ -37,6 +39,8 @@ export default function App() {
         {(value===2) && <Favourite/>}
         
       </Box>
+      <NewContactModal/>
+      
     </Provider>
     
   );

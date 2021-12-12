@@ -5,7 +5,7 @@ import ContactCard from './ContactCard'
 
 function Allcontacts() {
     const contacts = useSelector (state  => state.allContacts)
-    console.log(contacts)
+    
     return (
         <div>
             {
