@@ -35,7 +35,7 @@ export function allContactsReducer (state = [
             let copyState =  [...state]
             state.forEach((element, i) => {
                 if (action.payload === element.id){
-                    copyState[i].isFav = !state.isFav
+                    copyState[i].isFav = !state[i].isFav
                 }
             })
             return copyState

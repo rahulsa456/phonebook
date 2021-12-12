@@ -7,7 +7,7 @@ export function new_contact (contact){
 
 export function toggle_fav (id){
     return {
-        type: 'TOGGEL_FAV',
+        type: 'TOGGLE_FAV',
         payload: id
     }
 }
